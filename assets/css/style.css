@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* UTILITY */
+
+.flex{
+    display: flex;
+}
+
+
+.container__spotify{
+    height: 100vh;
+    position: relative;
+}
+
+/* SIDE BAR LEFT */
+
+.sidebar-left{
+    color: aqua;
+    height: 90vh;
+    width: 10%;
+    background-color: gray;
+    z-index: 1;
+}
+
+
+/* SIDE BAR TOP */
+.sidebar-top{
+    background-color: blue;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    right: 0;
+    height: 10vh;
+}
+
+/* FOOTER */
+.spotify__footer{
+    background-color: brown;
+    height: 10vh;
+}
