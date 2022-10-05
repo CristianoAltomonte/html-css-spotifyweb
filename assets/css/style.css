@@ -5,7 +5,6 @@
     bottom: 0;
     box-sizing: border-box;
     font-family: 'Fredoka One','Inter', sans-serif cursive; 
-    /* border: 1px solid red; */
 }
 
 /* UTILITY */
@@ -82,14 +81,20 @@ ul >li{
     vertical-align: middle;
 }
 
-.id{
-    width: 1.5rem;
-    vertical-align: middle;
-    margin-right: 2px;
-}
 
 .bordo{
     margin: 10px 0;
+}
+
+.id{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.bg-id{
+    background-color: gray;
+    border-radius: 50%;
 }
 
 /* SIDE BAR TOP */
@@ -185,4 +190,9 @@ img{
     color: white;
     position: fixed;
     width: 100%;
+}
+
+.cover-album{
+    width: 20%;
+    padding: 2px;
 }
