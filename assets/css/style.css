@@ -24,6 +24,11 @@
     justify-content: space-between ;
 }
 
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
 li{
     list-style: none;
 }
@@ -45,8 +50,12 @@ li{
     z-index: 1;
 }
 
+.menu-side{
+    font-size: 1rem;
+}
 
 /* SIDE BAR TOP */
+
 .sidebar-top{
     background-color: rgba(8, 11, 18, 1);
     color: white;
@@ -55,6 +64,14 @@ li{
     top: 0;
     right: 0;
     height: 10vh;
+    padding: 20px 20px;
+}
+
+.btn-sidebartop{
+    border-radius: 20px;
+    padding: 5px 30px;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 /* MAIN */
