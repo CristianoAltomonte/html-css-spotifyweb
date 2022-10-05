@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Spotify</title>
 </head>
@@ -14,22 +15,54 @@
 
             <div class="sidebar-left flex">
                 <!-- SIDE BAR LEFT -->
-                <div class="container-sidebarleft">
+                <div class="container-sidebarleft flex-column">
                     
                     <div class="menu-side">
                         <img src="./assets/img/logo.svg" alt="logo spotify">
-                        <div class="icon">
-                            <img src="./assets/img/home.svg" alt="home">
+                        <div>
+                            <img class="icon" src="./assets/img/home.svg" alt="home">
                             <span>Home</span>
                         </div>
                         <div>
-                            <img src="./assets/img/search.svg" alt="search">
+                            <img class="icon" src="./assets/img/search.svg" alt="search">
                             <span>Search</span>
                         </div>
-                    </div>
-                    <div class="profile">
+                        <div>
+                            <img class="icon" src="./assets/img/libreria.svg" alt="search">
+                            <span>La tua libreria</span>
+                        </div>
 
+                        <div>
+                            <h2>Playlist</h2>
+                            <i class="fa-solid fa-square-plus fa-3x"></i>
+                            <span>Crea Playlist</span>
+                        </div>
+                        <div class="nome-lista">
+                            <ul>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+                       
                     </div>
+                    <div>
+                        <div>
+                            <span> <img class="download" src="./assets/img/download.svg" alt="download"> Installa app</span>
+                        </div>
+                        <hr class="bordo">
+                        <div">
+                            <span> <img class="id" src="./assets/img/profile.svg" alt="download"> Installa app</span>
+
+                        </div>
+                        
+                    </div>
+                    
+                    
                     
                 </div>
 
@@ -64,32 +97,32 @@
                         <div class="card-playlist flex-between">
                             <div class="card">
                                 <img src="./assets/img/metal_lifting.jpg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card">
                                 <img src="./assets/img/stranger.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card">
                                 <img src="./assets/img/aquietplace.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card">
                                 <img src="./assets/img/split.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card">
                                 <img src="./assets/img/cure.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card">
                                 <img src="./assets/img/sinister.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
 
@@ -103,12 +136,12 @@
                         <div class="card-playlist flex">
                             <div class="card">
                                 <img src="./assets/img/radar.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card">
                                 <img src="./assets/img/mixdaily.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
 
@@ -121,12 +154,12 @@
                         <div class="card-playlist flex">
                             <div class="card">
                                 <img class="card-rotonda" src="./assets/img/einaudi.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <div class="card card-rotonda">
                                 <img class="card-rotonda" src="./assets/img/youg.jpeg" alt="immagine">
-                                <span class="titel">Canzone</span>
+                                <span class="title">Canzone</span>
                                 <span class="subtitle">Subtitle</span>
                             </div>
 
