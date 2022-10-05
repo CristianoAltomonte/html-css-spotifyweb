@@ -1,26 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap');
+
 *{
     margin: 0;
     bottom: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: 'Fredoka One','Inter', sans-serif cursive; 
     /* border: 1px solid red; */
 }
 
 /* UTILITY */
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .flex{
     display: flex;
 }
 
+.flex-between{
+    display: flex;
+    justify-content: space-between ;
+}
+
+li{
+    list-style: none;
+}
 
 .container__spotify{
     height: 100vh;
     position: relative;
+    background-color: rgba(20, 25, 34, 1);
 }
 
 /* SIDE BAR LEFT */
 
 .sidebar-left{
-    color: aqua;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
     height: 90vh;
     width: 10%;
     background-color: gray;
@@ -30,16 +48,76 @@
 
 /* SIDE BAR TOP */
 .sidebar-top{
-    background-color: blue;
-    position: absolute;
+    background-color: rgba(8, 11, 18, 1);
+    color: white;
+    position: fixed;
     width: 90%;
     top: 0;
     right: 0;
     height: 10vh;
 }
 
+/* MAIN */
+
+.main{
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 90vh;
+    padding: 1rem 1rem;
+    overflow: auto;
+    padding-bottom: 10em;
+}
+
+/* LISTA */
+
+.lista{
+    justify-content: center;
+}
+
+.lista >li{
+    margin-right: 1rem;
+}
+
+/* CARD */
+
+.playlist{
+    padding-top: 2rem;
+}
+
+.card-playlist{
+    padding: 1rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    width: calc(100%/6 - 1rem) ;
+    margin-right: 1rem;
+}
+
+.card-rotonda{
+    border-radius: 100%;
+} 
+
+.card >span{
+    display: block;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: smaller;
+    color: rgba(99, 102, 107, 1);
+}
+
+
 /* FOOTER */
 .spotify__footer{
-    background-color: brown;
+    background-color: rgba(40, 40, 40, 1);
     height: 10vh;
+    color: white;
+    position: fixed;
+    width: 100%;
 }
