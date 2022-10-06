@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap');
-
 *{
     margin: 0;
-    bottom: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Fredoka One','Inter', sans-serif cursive; 
+}
+
+/* CONTENITORE  */
+.web-app{
+    height: 100vh;
+    background-color: rgba(20, 25, 34, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* UTILITY */
@@ -47,22 +55,19 @@ ul >li{
     margin-top: 10px;
 }
 
-.container__spotify{
-    height: 100vh;
-    position: relative;
-    background-color: rgba(20, 25, 34, 1);
+.container{
+    height: 100%;
 }
 
-/* SIDE BAR LEFT */
-
+/* SIDEBAR LEFT */
 .sidebar-left{
+    flex: 1;
     background-color: rgba(0, 0, 0, 1);
     color: rgba(99, 102, 107, 1);
-    height: 90vh;
-    width: 15%;
-    background-color: rgb(13,15,21);
     padding: 1rem 1rem;
+
 }
+
 
 .icon{
     width: 2rem;
@@ -97,20 +102,27 @@ ul >li{
     border-radius: 50%;
 }
 
-/* SIDE BAR TOP */
-
-.sidebar-top{
-    background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    z-index: 1;
-    width: 85%;
-    top: 0;
-    right: 0;
-    height: 10vh;
-    padding: 20px 20px;
+img{
+    width: 100%;
 }
 
-.btn-sidebartop{
+/* MAIN */
+
+.main{
+    flex: 5;
+    overflow-y: auto;
+}
+
+.upgrade{
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    padding: 20px;
+}
+
+.btn-upgrade{
     border-radius: 20px;
     padding: 5px 30px;
     background-color: transparent;
@@ -118,20 +130,8 @@ ul >li{
     color: white;
 }
 
-/* MAIN */
-
 h2{
     color: white;
-}
-
-.main{
-    position: absolute;
-    right: 0;
-    width: 85%;
-    height: 90vh;
-    padding: 1rem 1rem;
-    overflow: auto;
-    padding-bottom: 10em;
 }
 
 /* LISTA */
@@ -148,7 +148,7 @@ h2{
 /* CARD */
 
 .playlist{
-    padding-top: 2rem;
+    padding: 1rem 1rem;
 }
 
 .card-playlist{
@@ -184,13 +184,15 @@ img{
 
 
 /* FOOTER */
-.spotify__footer{
+
+.footer{
     background-color: rgba(40, 40, 40, 1);
-    height: 10vh;
-    color: white;
+    color: white;   
     position: fixed;
-    width: 100%;
+    bottom: 0;
+    width: 100%; 
 }
+
 
 .cover-album{
     width: 20%;
