@@ -47,10 +47,6 @@ ul {
     margin-left: 0;        
 }
 
-.nome-lista{
-    font-size: 1.2rem;
-}
-
 ul >li{
     margin-top: 10px;
 }
@@ -65,7 +61,7 @@ ul >li{
     background-color: rgba(0, 0, 0, 1);
     color: rgba(99, 102, 107, 1);
     padding: 1rem 1rem;
-
+   
 }
 
 
@@ -91,6 +87,10 @@ ul >li{
     margin: 10px 0;
 }
 
+.user{
+    padding: 1px;
+}
+
 .id{
     display: inline-block;
     vertical-align: middle;
@@ -111,6 +111,7 @@ img{
 .main{
     flex: 5;
     overflow-y: auto;
+    height: 90vh;
 }
 
 .upgrade{
@@ -155,13 +156,14 @@ h2{
     padding: 1rem 0;
 }
 
-img{
+.card >img{
     width: 100%;
 }
 
 .card{
-    width: calc(100%/6 - 1rem) ;
-    margin-right: 1rem;
+    width: calc(100%/6) ;
+    flex-wrap: wrap; 
+    padding: 10px;
 }
 
 .card-rotonda{
@@ -188,13 +190,136 @@ img{
 .footer{
     background-color: rgba(40, 40, 40, 1);
     color: white;   
-    position: fixed;
-    bottom: 0;
-    width: 100%; 
+    align-items: center;
+    padding: 10px 10px;
+    height: 10vh;
+}
+
+.icon-album{
+    width: 15%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fa-heart .fa-folder{
+    padding-left: 100px;
+}
+
+.album > .icon-social{
+    display: inline;
+    margin: 0 35px;
+    color: rgba(99, 102, 107, 1);
+}
+
+.grigio{
+    border: 2px solid gray;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.bianco{
+    border: 1px solid white;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.setting >i{
+    margin-right: 10px;
 }
 
 
-.cover-album{
-    width: 20%;
-    padding: 2px;
-}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .card-playlist, .card{
+        flex-basis: calc(100%/4);
+        flex-wrap: wrap;
+    }
+    
+    .lista{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .card-playlist{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .card >img{
+        width: 100%;
+    }
+
+    .main{
+        height: 94vh;
+    }
+
+    .web-app{
+        height: 90vh;
+    }
+
+    .footer{
+        height: 10vh;
+    }
+
+    .container-sidebarleft{
+        height: 89vh;
+        font-size: smaller;
+        padding-bottom: 10px;
+    }
+
+    .icon-album{
+        width: 10%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+  }
+
+
+  @media screen and (max-width: 320px){
+   
+    .card-playlist, .card{
+        flex-basis: calc(100%/2);
+        flex-wrap: wrap;
+    }
+
+    .container-sidebarleft{
+        font-size: 10px;
+        
+    }
+
+    .btn-upgrade{
+        padding: 7px 10px;
+        font-size: 9px;
+    }
+
+    .icon{
+        width: 25%;
+    }
+
+    h2{
+        width: 1%;
+    }
+
+    .user{
+        font-size: smaller;
+        padding-right: 10px;
+    }
+
+    .setting{
+        display: flex;
+    }
+
+    .web-app{
+        height: 90%;
+    }
+
+    .footer{
+        height: 10%;
+    }
+
+
+
+  }
