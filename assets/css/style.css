@@ -408,4 +408,16 @@ h2{
         width: 30%;
     }
 
+    .main{
+        flex:10;
+    }
+
+    .menu-side img{
+        width:80%;
+    }
+
+    .user >img{
+        width: 100%;
+    }
+
   }
