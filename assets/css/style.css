@@ -62,6 +62,9 @@ ul >li{
    
 }
 
+.logo-small{
+    display: none;
+}
 
 .icon{
     width: 2rem;
@@ -352,11 +355,57 @@ h2{
     .album, .play, .setting {
         width: calc(100%/3);
     }
-    
 
-    .footer{
-        
+    .album{
+        font-size: small;
     }
 
+    .icon-album{
+        width: 30%;
+    }
+    
+  }
+
+  /* VERSIONE MOBILE S */
+
+  @media screen and (max-width: 320px){
+
+    .tool >i{
+        width: 10%;
+        font-size: 15px;
+    }
+    
+    .fa-circle-play{
+        width: 3%;
+    }
+
+    .icon-social{
+        display: flex;
+    }
+
+    .album{
+        display: flex;
+    }
+    
+    .album{
+        width: 40%;
+    }
+
+    .icon-album{
+        width: inherit;
+    }
+
+    .title{
+        font-size: small;
+    }
+
+    .container-sidebarleft  h2, ul, span, .bordo, .logo-big {
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+        width: 30%;
+    }
 
   }
