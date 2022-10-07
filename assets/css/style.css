@@ -189,7 +189,7 @@ h2{
     background-color: rgba(40, 40, 40, 1);
     color: white;   
     align-items: center;
-    padding: 10px 10px;
+    padding: 15px 10px;
     height: 10vh;   
 }
 
@@ -210,7 +210,7 @@ h2{
 
 .album > .icon-social{
     display: inline;
-    margin: 20%;
+    margin: 18%;
     color: rgba(99, 102, 107, 1);
 }
 
@@ -222,18 +222,17 @@ h2{
 
 .bianco{
     border: 1px solid white;
-    width: 200px;
+    width: 30%;
     border-radius: 3px;
-}
-
-.setting >i{
-    margin-right: 10px;
 }
 
 .setting{
     text-align: right;
 }
 
+.setting >i{
+    margin-right: 2%;
+}
 
 .tool{
     text-align: center;
@@ -246,7 +245,27 @@ h2{
 
 /* MEDIA QUERIES */
 
+/* VERSIONE DESKTOP */
+@media screen and (max-width: 1024px) {
+    .web-app{
+        height: 90vh;
+    }
+
+    .container-sidebarleft{
+        font-size: x-small;
+    }
+
+    .album > .icon-social{
+        margin: 10%;
+    }
+
+    .icon{
+        width: 10%;
+    }
+}
+
 /* VERSIONE TABLET */
+
 @media screen and (max-width: 768px) {
     .card-playlist, .card{
         flex-basis: calc(100%/4);
@@ -294,25 +313,26 @@ h2{
         width: 15%; 
     }
 
-    .icon-album{
-        width: 10%;
-        vertical-align: middle;
-        display: inline-block;
+    .album > .icon-social{
+        margin: 2%;
     }
   }
 
-/* VERSIONE MOBILE M */
+/* VERSIONE MOBILE L */
 
   @media screen and (max-width: 425px){
    
+    .main{
+        height: 90vh;
+    }
+
     .card-playlist, .card{
         flex-basis: calc(100%/2);
         flex-wrap: wrap;
     }
 
     .container-sidebarleft{
-        font-size: 10px;
-        
+        font-size: 7px;    
     }
 
     .btn-upgrade{
@@ -320,12 +340,8 @@ h2{
         font-size: 9px;
     }
 
-    .icon{
+    .icon, .download{
         width: 25%;
-    }
-
-    h2{
-        width: 1%;
     }
 
     .user{
@@ -333,18 +349,14 @@ h2{
         padding-right: 10px;
     }
 
-    .setting{
-        display: flex;
+    .album, .play, .setting {
+        width: calc(100%/3);
     }
-
-    .web-app{
-        height: 90%;
-    }
+    
 
     .footer{
-        height: 10%;
+        
     }
-
 
 
   }
