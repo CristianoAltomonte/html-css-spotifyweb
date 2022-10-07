@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka One','Inter', sans-serif cursive; 
 }
 
 /* CONTENITORE  */
@@ -60,7 +58,7 @@ ul >li{
     flex: 1;
     background-color: rgba(0, 0, 0, 1);
     color: rgba(99, 102, 107, 1);
-    padding: 1rem 1rem;
+    padding: 7px 10px;
    
 }
 
@@ -192,13 +190,18 @@ h2{
     color: white;   
     align-items: center;
     padding: 10px 10px;
-    height: 10vh;
+    height: 10vh;   
+}
+
+.album, .play, .setting{
+    width: calc(100%/3);
 }
 
 .icon-album{
     width: 15%;
     vertical-align: middle;
     display: inline-block;
+    padding: 1%;
 }
 
 .fa-heart .fa-folder{
@@ -207,13 +210,13 @@ h2{
 
 .album > .icon-social{
     display: inline;
-    margin: 0 35px;
+    margin: 20%;
     color: rgba(99, 102, 107, 1);
 }
 
 .grigio{
     border: 2px solid gray;
-    width: 300px;
+    width: 100%;
     border-radius: 3px;
 }
 
@@ -227,10 +230,23 @@ h2{
     margin-right: 10px;
 }
 
+.setting{
+    text-align: right;
+}
 
 
-/* Media Queries */
+.tool{
+    text-align: center;
+}
 
+.tool >i{
+    margin-right: 5%;
+    margin-bottom: 10px; 
+}
+
+/* MEDIA QUERIES */
+
+/* VERSIONE TABLET */
 @media screen and (max-width: 768px) {
     .card-playlist, .card{
         flex-basis: calc(100%/4);
@@ -266,8 +282,16 @@ h2{
 
     .container-sidebarleft{
         height: 89vh;
-        font-size: smaller;
+        font-size: x-small;
         padding-bottom: 10px;
+    }
+
+    .bordo{
+        margin: 3px 0;
+    }
+
+    .icon{
+        width: 15%; 
     }
 
     .icon-album{
@@ -277,8 +301,9 @@ h2{
     }
   }
 
+/* VERSIONE MOBILE M */
 
-  @media screen and (max-width: 320px){
+  @media screen and (max-width: 425px){
    
     .card-playlist, .card{
         flex-basis: calc(100%/2);
