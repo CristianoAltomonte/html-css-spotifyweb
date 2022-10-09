@@ -107,6 +107,13 @@ img{
     width: 100%;
 }
 
+/* HOVER  */
+
+.menu-side :hover.selection {
+    border-left: 3px solid greenyellow;
+    color: white;
+}
+
 /* MAIN */
 
 .main{
@@ -147,6 +154,23 @@ h2{
     margin-right: 1rem;
 }
 
+/* HOVER */
+
+u{
+    text-decoration: none;
+}
+
+li:hover u{
+    text-decoration-thickness: 3px;
+    text-decoration-color: yellowgreen;
+    text-decoration-line: underline;
+}
+
+li:hover{
+    color: white;
+}
+
+
 /* CARD */
 
 .playlist{
@@ -167,6 +191,7 @@ h2{
     padding: 10px;
 }
 
+
 .card-rotonda{
     border-radius: 100%;
 } 
@@ -185,6 +210,11 @@ h2{
     color: rgba(99, 102, 107, 1);
 }
 
+/* HOVER */
+
+.card img:hover{
+    opacity: 0.4;
+}
 
 /* FOOTER */
 
@@ -325,6 +355,7 @@ h2{
     .album > .icon-social{
         margin: 2%;
     }
+
   }
 
 /* VERSIONE MOBILE L */
